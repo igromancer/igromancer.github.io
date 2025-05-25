@@ -6,8 +6,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Igor Romanenko</h1>
+      <nav class="space-x-4">
+        <a href="#resume" class="text-blue-600 hover:underline">Resume</a>
+        <a href="#blog" class="text-blue-600 hover:underline">Blog</a>
+        <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-20">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold mb-2">Welcome</h2>
+      <p class="text-lg text-gray-600">I’m a software engineer focused on building scalable backend systems in Go and Kubernetes.</p>
+    </section>
+
+    <section id="resume">
+      <h2 class="text-2xl font-semibold mb-4">Resume</h2>
+      <p class="mb-2">Download my resume <a href="/assets/igor_resume.pdf" class="text-blue-600 hover:underline" target="_blank">here</a>.</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>8+ years in software engineering</li>
+        <li>Expert in Go, Kubernetes, PostgreSQL</li>
+        <li>Experience leading remote teams and mentoring juniors</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2 class="text-2xl font-semibold mb-4">Blog</h2>
+      <div id="blog-posts" class="space-y-2">
+        <p class="text-gray-600">Loading posts...</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+      <form class="space-y-4 max-w-md">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded p-2" />
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded p-2" />
+        <textarea placeholder="Your Message" class="w-full border border-gray-300 rounded p-2"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white text-center py-4 mt-10 text-sm text-gray-500">
+    © 2025 Igor Romanenko. All rights reserved and what not.
+  </footer>
   </body>
 </html>
