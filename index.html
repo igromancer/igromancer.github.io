@@ -1,58 +1,214 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <header class="bg-white shadow-md sticky top-0 z-10">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Igor Romanenko</h1>
-      <nav class="space-x-4">
-        <a href="#resume" class="text-blue-600 hover:underline">Resume</a>
-        <a href="#blog" class="text-blue-600 hover:underline">Blog</a>
-        <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor Romanenko — Senior Software Engineer</title>
+  <meta name="description" content="Igor Romanenko, Senior Software Engineer in Toronto, ON. Backend & microservice architecture, Go, Kubernetes, cloud-native systems." />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200">
+
+  <header class="border-b border-neutral-800 sticky top-0 bg-neutral-950/95 backdrop-blur z-10">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-emerald-400 font-semibold">~/igor.romanenko</a>
+      <nav class="flex gap-6 text-sm text-neutral-400">
+        <a href="#resume" class="hover:text-emerald-400 transition">resume</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">projects</a>
+        <a href="#blog" class="hover:text-emerald-400 transition">blog</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-10 space-y-20">
-    <section class="text-center">
-      <h2 class="text-4xl font-bold mb-2">Welcome</h2>
-      <p class="text-lg text-gray-600">I’m a software engineer focused on building scalable backend systems in Go and Kubernetes.</p>
-    </section>
+  <main class="max-w-4xl mx-auto px-6">
 
-    <section id="resume">
-      <h2 class="text-2xl font-semibold mb-4">Resume</h2>
-      <p class="mb-2">Download my resume <a href="/assets/igor_resume.pdf" class="text-blue-600 hover:underline" target="_blank">here</a>.</p>
-      <ul class="list-disc list-inside space-y-1">
-        <li>8+ years in software engineering</li>
-        <li>Expert in Go, Kubernetes, PostgreSQL</li>
-        <li>Experience leading remote teams and mentoring juniors</li>
-      </ul>
-    </section>
-
-    <section id="blog">
-      <h2 class="text-2xl font-semibold mb-4">Blog</h2>
-      <div id="blog-posts" class="space-y-2">
-        <p class="text-gray-600">Loading posts...</p>
+    <!-- Hero -->
+    <section class="py-24">
+      <p class="text-emerald-400 mb-3">$ whoami</p>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-white">Igor Romanenko — Senior Software Engineer</h1>
+      <p class="text-neutral-400 max-w-xl leading-relaxed">
+        Toronto, ON. 9+ years building scalable, high-performance backend and microservice
+        architecture. Currently shipping real-time data infrastructure in Go on Kubernetes at
+        KX Systems. Focused on CI/CD, cloud-native systems, and reliable distributed integrations.
+      </p>
+      <div class="mt-6 flex gap-4 text-sm">
+        <a href="#contact" class="text-emerald-400 hover:underline">$ contact --me</a>
+        <a href="assets/igor_resume.pdf" target="_blank" class="text-emerald-400 hover:underline">$ curl resume.pdf</a>
       </div>
     </section>
 
-    <section id="contact">
-      <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
-      <form class="space-y-4 max-w-md">
-        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded p-2" />
-        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded p-2" />
-        <textarea placeholder="Your Message" class="w-full border border-gray-300 rounded p-2"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+    <!-- Resume -->
+    <section id="resume" class="py-16 border-t border-neutral-800">
+      <p class="text-emerald-400 mb-8"># experience</p>
+      <div class="space-y-8">
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2024-02 — present</p>
+          <h3 class="text-white font-semibold">KX Systems <span class="text-neutral-500 font-normal">// Senior Software Engineer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>High-performance microservice powering real-time data operations for KDB Insights</li>
+            <li>Comprehensive test coverage, seamless CI/CD pipeline integration</li>
+            <li>Golang, Docker, Kubernetes, Helm; exposure to KDB/Q</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2023-01 — 2024-02</p>
+          <h3 class="text-white font-semibold">Deliverect <span class="text-neutral-500 font-normal">// Backend Developer & Sprint Lead</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>Led backend initiatives focused on platform reliability and third-party integrations</li>
+            <li>Facilitated Agile ceremonies; ran 1:1s and mentorship sessions</li>
+            <li>Contributed to internship hiring and scaling engineering practices</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2022-01 — 2022-12</p>
+          <h3 class="text-white font-semibold">Deliverect <span class="text-neutral-500 font-normal">// Backend Developer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>Built integrations between delivery platforms and POS systems</li>
+            <li>Increased test and type coverage by 30%</li>
+            <li>Python, Flask, MongoDB, Docker, RabbitMQ</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2020-05 — 2022-01</p>
+          <h3 class="text-white font-semibold">Northbridge <span class="text-neutral-500 font-normal">// Senior Full-Stack Developer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>Delivered features for the company's core insurance quoter product</li>
+            <li>Ensured bug-free integration with interdependent REST APIs</li>
+            <li>Managed Azure deployment pipeline; Python/Django, JavaScript/Angular</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2019-06 — 2020-01</p>
+          <h3 class="text-white font-semibold">BMO Financial Group <span class="text-neutral-500 font-normal">// Senior Developer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>Supported and enhanced the Page Builder platform for internal users</li>
+            <li>Python/Django (backend), JavaScript/React (frontend)</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2018-08 — 2019-06</p>
+          <h3 class="text-white font-semibold">Atomic Reach <span class="text-neutral-500 font-normal">// Front-End Developer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>Rebuilt the front-end using React.js with modular, testable components</li>
+            <li>Mentored junior developers on front-end best practices</li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-emerald-500/30 pl-4">
+          <p class="text-xs text-neutral-500">2016-05 — 2018-07</p>
+          <h3 class="text-white font-semibold">Horizn Inc. &amp; Kanetix Ltd. <span class="text-neutral-500 font-normal">// Web Developer</span></h3>
+          <ul class="text-sm text-neutral-400 mt-1 list-disc list-inside space-y-0.5">
+            <li>LAMP stack development, MySQL query optimization</li>
+            <li>PHP, Python, JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-emerald-400 mb-3 text-sm"># skills</p>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Go, Python, JavaScript, PHP · Django, Flask, Celery, React.js, Angular, Laravel ·
+            PostgreSQL, MySQL, MongoDB · Docker, Kubernetes, Helm, RabbitMQ, Azure ·
+            Microservices, REST APIs, CI/CD, Agile/Scrum, System Design
+          </p>
+        </div>
+        <div>
+          <p class="text-emerald-400 mb-3 text-sm"># education</p>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Internet Applications and Web Development — Fanshawe College (2014–2016)<br/>
+            Web Development Immersive Bootcamp — BrainStation (2015)<br/>
+            International Business Management — National Mining University, Ukraine (2008–2013)
+          </p>
+        </div>
+      </div>
+
+      <a href="assets/igor_resume.pdf" target="_blank" class="inline-block mt-8 text-sm text-emerald-400 hover:underline">$ curl resume.pdf →</a>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 border-t border-neutral-800">
+      <p class="text-emerald-400 mb-8"># projects</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border border-neutral-800 rounded-lg p-5 hover:border-emerald-500/40 transition">
+          <h3 class="text-white font-semibold mb-2">KDB Insights Microservice</h3>
+          <p class="text-sm text-neutral-400 mb-3">High-performance Go microservice powering real-time data operations, deployed on Kubernetes with Helm and full CI/CD integration.</p>
+          <p class="text-xs text-neutral-600">Go · Docker · Kubernetes · Helm</p>
+        </div>
+        <div class="border border-neutral-800 rounded-lg p-5 hover:border-emerald-500/40 transition">
+          <h3 class="text-white font-semibold mb-2">POS Integration Platform</h3>
+          <p class="text-sm text-neutral-400 mb-3">Integrations connecting delivery platforms to restaurant point-of-sale systems; raised test and type coverage by 30%.</p>
+          <p class="text-xs text-neutral-600">Python · Flask · MongoDB · RabbitMQ</p>
+        </div>
+        <div class="border border-neutral-800 rounded-lg p-5 hover:border-emerald-500/40 transition">
+          <h3 class="text-white font-semibold mb-2">Insurance Quoter Platform</h3>
+          <p class="text-sm text-neutral-400 mb-3">Core feature delivery for a full-stack insurance quoting product, with interdependent REST APIs and an Azure deployment pipeline.</p>
+          <p class="text-xs text-neutral-600">Django · Angular · Azure</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-16 border-t border-neutral-800">
+      <p class="text-emerald-400 mb-8"># blog</p>
+      <div id="blog-posts" class="space-y-4">
+        <!-- populated by script below -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 border-t border-neutral-800">
+      <p class="text-emerald-400 mb-8"># contact</p>
+      <p class="text-sm text-neutral-400 mb-6">romanenko.igor2014@gmail.com</p>
+
+      <form action="https://formsubmit.co/romanenko.igor2014@gmail.com" method="POST" class="space-y-4 max-w-md">
+        <input type="hidden" name="_subject" value="New message from igromancer.github.io" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="name" placeholder="your_name" required
+          class="w-full bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-emerald-500/50" />
+        <input type="email" name="email" placeholder="your_email@domain.com" required
+          class="w-full bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-emerald-500/50" />
+        <textarea name="message" placeholder="your_message" required rows="4"
+          class="w-full bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-neutral-200 placeholder-neutral-600 focus:outline-none focus:border-emerald-500/50"></textarea>
+        <button type="submit"
+          class="bg-emerald-500 text-neutral-950 font-semibold px-5 py-2.5 rounded text-sm hover:bg-emerald-400 transition">
+          $ send --message
+        </button>
       </form>
     </section>
+
   </main>
 
-  <footer class="bg-white text-center py-4 mt-10 text-sm text-gray-500">
-    © 2025 Igor Romanenko. All rights reserved and what not.
-  </footer>
-  </body>
+  <footer class="text-center py-10 text-xs text-neutral-600 border-t border-neutral-800">© 2026 Igor Romanenko</footer>
+
+  <script>
+    // Simple static blog list — add entries here as posts are written.
+    const posts = [];
+
+    const container = document.getElementById('blog-posts');
+    if (posts.length === 0) {
+      container.innerHTML = '<p class="text-sm text-neutral-600">// no posts yet — check back soon</p>';
+    } else {
+      container.innerHTML = posts.map(p => `
+        <a href="${p.url}" class="block border-l-2 border-emerald-500/30 pl-4 hover:border-emerald-400 transition">
+          <p class="text-xs text-neutral-500">${p.date}</p>
+          <h3 class="text-white font-semibold">${p.title}</h3>
+          <p class="text-sm text-neutral-400">${p.excerpt}</p>
+        </a>
+      `).join('');
+    }
+  </script>
+
+</body>
 </html>
